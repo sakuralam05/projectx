@@ -1,0 +1,17 @@
+sudo apt update && sudo snap install gallery-dl
+
+
+gallery-dl -g -u "<username>" -p "<password>" "https://www.instagram.com/p/CUU9-FFFaE5/"
+
+
+const command = `gallery-dl -g -u "${user}" -p "${pass}" "${url}"`;
+exec(command, async (err, stdout, stderr) => {
+    if (err) {
+        // getting the err.message
+    } else {
+        // use the downloaded file name/path to do your stuff
+    }
+});
+
+
+
