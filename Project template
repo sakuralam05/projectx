@@ -1,0 +1,22 @@
+<TemplateContent>
+    <ProjectItem
+        ReplaceParameters="true"
+        TargetFileName="$projectname$.exe">
+            File1.exe
+    </ProjectItem>
+      ...
+</TemplateContent>
+namespace $safeprojectname$
+{
+    public class Class1
+    {
+        public Class1()
+        { }
+    }
+}
+<TemplateContent>
+    <ProjectItem ReplaceParameters="true">
+        Class1.cs
+    </ProjectItem>
+    ...
+</TemplateContent>
