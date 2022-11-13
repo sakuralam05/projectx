@@ -1,0 +1,19 @@
+cd ~/code/project001/
+git init
+
+
+git init project002
+
+(This is equivalent to: mkdir project002 &amp;&amp; cd project002 &amp;&amp; git init)
+
+
+$ ls .git
+HEAD         config       hooks/       objects/
+branches/    description  info/        refs/
+
+
+cd ~/code/project001/
+rm -rf .git/
+
+
+
