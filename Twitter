@@ -1,0 +1,9 @@
+def writeExtended(id, idstr, full_text, display_text_range, created_at):
+    #Write Extended tweet details to CSV file
+    with open('Extended.csv', mode='a+', newline='') as employee_file:
+        employee_writer = csv.writer(employee_file)
+        employee_writer.writerow([id, '\t{}'.format(idstr), full_text, display_text_range, created_at])
+
+writeExtended(count, tweet.id, tweet.full_text.encode('utf8'), tweet.display_text_range, tweet.created_at)
+
+
